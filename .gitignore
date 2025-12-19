@@ -1,0 +1,13 @@
+# build outputs
+bin/
+obj/
+iso_root/
+*.iso
+*.img
+*.hdd
+
+
+.DS_Store
+*.swp
+*.swo
+.vscode/
