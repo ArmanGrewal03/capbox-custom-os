@@ -7,7 +7,7 @@ This is **not** a full-featured OS. It is intentionally small, readable, and dem
 
 ---
 
-## 🎯 Project Goals
+##Project Goals
 
 - Learn low-level OS development (booting, memory, interrupts)
 - Implement a **capability-based security model**
@@ -17,7 +17,7 @@ This is **not** a full-featured OS. It is intentionally small, readable, and dem
 
 ---
 
-## 🔐 Core Security Idea
+## Core Security Idea
 
 There are **no global permissions**.
 
@@ -32,7 +32,7 @@ No capability = no power.
 
 ---
 
-## 🧠 High-Level Design
+## High-Level Design
 
 - **Microkernel**
   - Minimal kernel responsibilities
@@ -48,7 +48,7 @@ No capability = no power.
 
 ---
 
-## 🛠️ Planned Architecture
+##  Planned Architecture
 
 - Architecture: `x86_64`
 - Bootloader: `GRUB (Multiboot2)`
@@ -58,7 +58,7 @@ No capability = no power.
 
 ---
 
-## 🚀 Implementation Roadmap (Reference)
+## Implementation Roadmap (Reference)
 
 ### Phase 1: Boot & Basics
 1. Boot kernel using GRUB
@@ -98,7 +98,7 @@ No capability = no power.
 
 ---
 
-## 🔑 Capability System
+## Capability System
 
 ### Capability Model
 Each process has a **capability table (C-space)**:
@@ -132,7 +132,7 @@ The kernel verifies:
 
 ---
 
-## 📬 IPC (Inter-Process Communication)
+## IPC (Inter-Process Communication)
 
 - Communication happens via **endpoints**
 - Message passing only
@@ -149,7 +149,7 @@ The kernel verifies:
 
 ---
 
-## 🎮 Demo Programs
+##  Demo Programs
 
 ### Program A: Game / Normal App
 - Has console capability
@@ -165,19 +165,7 @@ This demonstrates **real isolation and security enforcement**.
 
 ---
 
-## ❌ Non-Goals (Important)
-
-- No full POSIX support
-- No complex filesystem (early versions)
-- No networking
-- No GUI at first
-- No formal verification
-
-The focus is **clarity and correctness**, not feature count.
-
----
-
-## 🏁 End Goal
+## End Goal
 
 A small, understandable OS that can clearly demonstrate:
 
@@ -188,21 +176,13 @@ A small, understandable OS that can clearly demonstrate:
 
 ---
 
-## 📌 Status
+## Status
 
 🚧 Work in progress  
 Built for learning, experimentation, and fun.
 
 ---
 
-## 📖 Inspiration
-
-- seL4
-- KeyKOS / EROS
-- Zircon (Fuchsia)
-- OSDev community
-
----
 
 > capbox — a minimal capability-based microkernel for sandboxed applications.
 
