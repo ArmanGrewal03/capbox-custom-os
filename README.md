@@ -1,6 +1,6 @@
 # capbox
 
-**capbox** is a minimal, **capability-based microkernel** focused on **security, isolation, and fun**.  
+**capbox** is a minimal, **capability-based microkernel** focused on **security and isolation**.  
 The goal of this project is to explore how modern secure operating systems work by building a small microkernel where **processes only have the permissions (capabilities) explicitly given to them**.
 
 This is **not** a full-featured OS. It is intentionally small, readable, and demonstrable.
